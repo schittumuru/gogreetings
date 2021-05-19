@@ -1,14 +1,14 @@
-package greetings
+package gogreetings
 
-
-import "testing"
-import "regexp"
-
+import (
+	"regexp"
+	"testing"
+)
 
 func TestHelloName(t *testing.T) {
 
 	name := "sasi"
-	want := regexp.MustCompile(`\b`+name+`\b`)
+	want := regexp.MustCompile(`\b` + name + `\b`)
 
 	message, err := Hello(name)
 

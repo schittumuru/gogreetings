@@ -1,4 +1,4 @@
-package greetings
+package gogreetings
 
 import (
 	"errors"
